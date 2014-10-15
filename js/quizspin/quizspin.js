@@ -85,7 +85,7 @@ function winnerAnim(creditsValue, winningValue) {
     showScore(winningValue);
 }
 function startSlots() {
-    $('#suggestion').html("If you want to know more, check out one of the content slides");
+//    $('#suggestion').html("If you want to know more, check out one of the content slides");
     $('.slidelink').show();
     $('#slot-handle').animate({
         left: "-585px"
@@ -230,7 +230,8 @@ function processAnswers(answer) {
                 }
             });
             $('#scoring-panel').fadeOut('slow');
-            $('#suggestion').html("You might want to check out this slide to learn the correct answer...");
+//            $('#suggestion').html("You might want to check out this slide to learn the correct answer...");
+            $('#suggestion').html($('#share_point').html());
             $('#profile-panel').fadeIn(function(){
                 $('#answer-menu').fadeOut(function () {
                     $('#standard-menu').fadeIn();
