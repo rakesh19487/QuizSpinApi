@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   get 'welcome/index'
   match '/save_users', to: 'welcome#save_users', via: [:post], :as=>"save_users"
   match '/save_users_scores', to: 'welcome#save_users_scores', via: [:post], :as=>"save_users_scores"
+  match '/get_leaderBoard_data', to: 'welcome#get_leaderBoard_data', via: [:get, :post], :as=>"get_leaderBoard_data"
+  match '/check_user_present', to: 'welcome#check_user_present', via: [:get, :post], :as=>"check_user_present"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
