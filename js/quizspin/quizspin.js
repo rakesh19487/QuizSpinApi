@@ -1,4 +1,4 @@
-var credits = game.credits + 10;
+var credits = game.credits + 0;
 var won = false;
 var freespins = 0;
 var freespinning = false;
@@ -37,7 +37,7 @@ function flickSpinclick() {
     $('#spinclick').fadeIn(100, function () {
         setTimeout(function () {
             $('#spinclick').fadeOut(1000);
-        }, 4000);
+        }, 10000);
     });
 }
 function resetHandle() {
@@ -135,7 +135,7 @@ function winSlots(winCount, winners) {
         this.addClass('winner');
     });
     if (freespinning) {
-        freespinTotal += winCount * 25;
+        freespinTotal += winCount * 50;
         if (winCount > 0) {
             $('#free-earnings').append(" <span style='color:gold'>+" + winCount * 50 + "</span>");
         }
@@ -232,7 +232,7 @@ function processAnswers(answer) {
             $('#scoring-panel').fadeOut('slow');
 //            $('#suggestion').html("You might want to check out this slide to learn the correct answer...");
             $('#suggestion').html($('#share_point').html());
-            $('#profile-panel').fadeIn(function(){
+            $('#payoff-panel').fadeIn(function(){
                 $('#answer-menu').fadeOut(function () {
                     $('#standard-menu').fadeIn();
                     resetHandle();
@@ -281,7 +281,7 @@ function showResult(resultMsg, correctAnswer, freespinsCount) {
         fontSize: "120px",
         opacity: 0
     }, function () {
-        $('#scoring').html("<h3 style='margin:0;padding:0;color:gold'>Free Spins</h3><div class='small-scribble'> The machine will spin automatically " + freespinsCount + " times for free. Over and above the usual payoff, you will receive 25 " + content.credits_name + " for each bonus block that appears. <h3>Earnings: <div id='free-earnings'></div></h3></div>").css({
+        $('#scoring').html("<h3 style='margin:0;padding:0;color:gold'>Free Spins</h3><div class='small-scribble'> The machine will spin automatically " + freespinsCount + " times for free. Over and above the usual payoff, you will receive 50 " + content.credits_name + " for each bonus block that appears. <h3>Earnings: <div id='free-earnings'></div></h3></div>").css({
             marginTop: "-50px",
             fontSize: "50px",
             opacity: 1

@@ -1,0 +1,674 @@
+<!DOCTYPE>
+<html itemscope itemtype="http://schema.org/Article">
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<head prefix="og: http://ogp.me/ns#">
+    <style>
+
+
+        .button {
+
+            background-image: url("img/quizspin/play_button.png");
+            background-size: 100% 100%;
+            width: 133px;
+            height: 33px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modalDialog:target {
+            /*opacity:1;*/
+            opacity: 0.9;
+            pointer-events: auto;
+        }
+
+        .modalDialog > div {
+            width: 600px;
+            opacity: 0.9;
+            height: 200px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: black;
+            /*background: -moz-linear-gradient(#fff, #999);*/
+            /*background: -webkit-linear-gradient(#fff, #999);*/
+            /*background: -o-linear-gradient(#fff, #999);*/
+        }
+
+        .modal_text_box {
+            text-align: center;
+        }
+
+        #intro-content {
+            color: gold;
+           margin-top: -18px;
+           font-size: 0.7em;
+
+        }
+
+        .share_button {
+            text-align: center;
+            margin-top: 15px;
+            padding: 5px;
+            margin-left: 63px;
+
+        }
+.fb-share-button { opacity: 1.0; height: 21px;width:57px; overflow: visible; }
+.fb-share-button span { height:100% !important ;width:100% !important}
+.fb-share-button span iframe {height:100% !important;width:100% !important}
+.google-btn{width:55px;}
+.google-btn div{width:100% !important;}
+.google-btn div iframe{width:100% !important}
+
+        /*.close {*/
+        /*background: #606061;*/
+        /*color: #FFFFFF;*/
+        /*line-height: 25px;*/
+        /*position: absolute;*/
+        /*right: -12px;*/
+        /*text-align: center;*/
+        /*top: -10px;*/
+        /*width: 24px;*/
+        /*text-decoration: none;*/
+        /*font-weight: bold;*/
+        /*-webkit-border-radius: 12px;*/
+        /*-moz-border-radius: 12px;*/
+        /*border-radius: 12px;*/
+        /*-moz-box-shadow: 1px 1px 3px #000;*/
+        /*-webkit-box-shadow: 1px 1px 3px #000;*/
+        /*box-shadow: 1px 1px 3px #000;*/
+        /*}*/
+
+        /*.close:hover { background: #00d9ff; }*/
+
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>QuizSpin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add the following three tags inside head. -->
+<meta itemprop="name" content="Diwali Quizspin">
+<meta itemprop="description" content="This is a sample description">
+<meta itemprop="image" content="http://diwali.ptotemy.com/img/quizspin/menubtns/gamelogo.png">
+<meta property="og:image" content="/img/quizspin/menubtns/gamelogo.png">
+    <meta name="description" content="Are you the lucky one? Play this exciting Diwali trivia and win great prizes!">
+    <meta property="og:description" content="Are you the lucky one? Play this exciting Diwali trivia and win great prizes! ">
+
+
+<!-- Update your html tag to include the itemscope and itemtype attributes. -->
+
+
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/quizspin.css">
+    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var initial_score = document.getElementById('creditsVal').innerHTML;
+            var current_user_score = document.getElementById('scoring').innerHTML;
+        }
+
+
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52508994-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</head>
+<body>
+<div id="openingModal">
+<a href="#openModal" style="display: none" id="modalOpen">Open Modal</a>
+</div>
+<script>!function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, 'script', 'twitter-wjs');</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Application content go here -->
+
+<!-- Game Design -->
+<div class="game-wrapper">
+<audio id="spinner-sound">
+    <source src="sounds/quizspin/spinner.mp3" type="audio/mpeg">
+    <source src="sounds/quizspin/spinner.ogg" type="audio/ogg">
+    Your browser does not support this audio format.
+</audio>
+<audio id="cranker">
+    <source src="sounds/quizspin/crank.mp3" type="audio/mpeg">
+    <source src="sounds/quizspin/crank.ogg" type="audio/ogg">
+    Your browser does not support this audio format.
+</audio>
+<img src="img/quizspin/spinclick.png" id="spinclick"/>
+
+<div id="machine-half">
+    <div id="machine">
+        <img src="" id="machine-image"/>
+        <img src="" id="marquee"/>
+        <img src="" id="branding"/>
+
+        <div id="handle-wrapper">
+            <img src="#" id="slot-handle"/>
+        </div>
+        <div id="slots-panel">
+            <ul class="slots">
+                <li>
+                    <span><img src="" class="questioner"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="questioner"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon1"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon2"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon3"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon4"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon5"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon3"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon4"/></span>
+                </li>
+                <li>
+                    <span><img src="" class="icon5"/></span>
+                </li>
+            </ul>
+            <img src="img/quizspin/over.png" id="slotOverlay"/>
+        </div>
+    </div>
+</div>
+<div  id="matter-half">
+    <div id="header-panel">
+        <img src="img/quizspin/logo.png" id="logo"/>
+        <br/>
+
+        <div id="credits">
+            <div id="creditsVal"></div>
+            <div id="creditsLabel"></div>
+        </div>
+    </div>
+    <div id="matter-panel">
+        <div id="base-panel">
+            <img src="img/quizspin/panelBack.png" class="panelBack"/>
+        </div>
+        <div id="intro-panel" class="content-panel">
+            <img src="img/quizspin/panelBack.png" class="panelBack"/>
+
+            <div id="intro-text">
+                <img  src="" id="gamelogo"/>
+
+                <div id="intro-content"></div>
+                <img src="img/quizspin/exit.png" id="exiter"/>
+            </div>
+        </div>
+        <div id="leaderboard-panel" class="content-panel">
+            <img src="img/quizspin/panelBack.png" class="panelBack"/>
+
+            <div id="leaderboard-table">
+                <h1 style="color: gold">Leaderboard</h1>
+                <table style="color: gold">
+                    <tr>
+                        <th>Rank</th>
+                        <th>User</th>
+                        <th>Credits</th>
+
+                    </tr>
+                    <tr>
+                        <td class="rank_user"></td>
+                        <td class="email_id_user"></td>
+                        <td class="credit_user"></td>
+
+                    </tr>
+                    <tr>
+                    <td colspan="3"><div class="current_rank" style=""></div></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div id="payoff-panel" class="content-panel">
+            <img src="img/quizspin/panelBack.png" class="panelBack"/>
+
+            <div id="payoff-table">
+                <h2 style="color: gold">Payoff Table</h2>
+                <table style="color: gold">
+                    <tr>
+                        <td>
+                            <img src="" class="icon1"/><img src="" class="icon1"/><img src=""
+                                                                                       class="icon1"/><span>60</span>
+                        </td>
+                        <td>
+                            <img src="" class="icon1"/><img src="" class="icon1"/><span>30</span>
+                        </td>
+                        <td>
+                            <img src="" class="icon1"/><span>15</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="" class="icon2"/><img src="" class="icon2"/><img src=""
+                                                                                       class="icon2"/><span>50</span>
+                        </td>
+                        <td>
+                            <img src="" class="icon2"/><img src="" class="icon2"/><span>25</span>
+                        </td>
+                        <td>
+                            <img src="" class="icon2"/><span>10</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="" class="icon3"/><img src="" class="icon3"/><img src=""
+                                                                                       class="icon3"/><span>40</span>
+                        </td>
+                        <td>
+                            <img src="" class="icon3"/><img src="" class="icon3"/><span>20</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="" class="icon4"/><img src="" class="icon4"/><img src=""
+                                                                                       class="icon4"/><span>30</span>
+                        </td>
+                        <td>
+                            <img src="" class="icon4"/><img src="" class="icon4"/><span>15</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="" class="icon5"/><img src="" class="icon5"/><img src=""
+                                                                                       class="icon5"/><span>20</span>
+                        </td>
+                        <td>
+                            <img src="" class="icon5"/><img src="" class="icon5"/><span>10</span>
+                        </td>
+                    </tr>
+
+                </table>
+                <p style="width:90%;color: gold">
+                    <img src="" class="questioner"/>
+                    Answer questions to win free spins.</p>
+            </div>
+        </div>
+        <div id="profile-panel" class="content-panel">
+            <img src="img/quizspin/panelBack.png" class="panelBack"/>
+            </br>
+            <div id="suggestion">
+                Share this game to wish your friends a very happy Diwali!
+
+                <!--<ul id="profile-content">-->
+                <div class="share_button">
+                    <div id="share_point" style="float:left;margin-left:4px;margin-top:5px">
+                        <div class="fb-share-button" data-href="http://diwali.ptotemy.com/" data-width="500px"
+                             data-layout="button"></div>
+                        <div id="fb-root"></div>
+
+                    </div>
+                    <div style="float:left;margin-left:4px;margin-top: 5px;">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="none"
+                           data-url="http://diwali.ptotemy.com/" data-text="Celebrate Diwali by playing this awesome game. #HappyDiwali " data-hashtags="DiwaliQuizSpin" data-via="ptotemlearning"></a>
+                    </div>
+                    <div class="google-btn" style="float: left;margin-left:4px;margin-top: 5px;">
+                        <div class="g-plus" data-action="share" data-href="http://diwali.ptotemy.com/"
+                             data-annotation="none"></div>
+                    </div>
+                    <!--</ul>-->
+                </div>
+
+            </div>
+<span style="position:absolute;left:117px;top:232px;font-size:1.0em;font-weight:bold;">The celebration ends<br> on 30<superscript>th</superscript> of October!</span>
+
+
+
+
+
+        </div>
+        <div id="quiz-panel" class="content-panel">
+            <img src="img/quizspin/panelBack.png" class="panelBack"/>
+
+            <div id="quiz-content" class="questioned">
+                <div id="qquestion"></div>
+                <div id="qid"></div>
+                <ul id="answerBlock">
+                    <li class="answer" id="optax"></li>
+                    <li class="answer" id="optbx"></li>
+                    <li class="answer" id="optcx"></li>
+                    <li class="answer" id="optdx"></li>
+                </ul>
+                <div id="answerMsg"></div>
+            </div>
+        </div>
+        <div id="scoring-panel" class="content-panel">
+            <img src="img/quizspin/panelBack.png" class="panelBack"/>
+
+            <div id="scoring"></div>
+        </div>
+    </div>
+    <div id="menu-panel">
+        <div id="standard-menu">
+            <div id="introBtn" class="menuBtn activeBtn" title="Welcome Panel">
+                <img src="img/quizspin/menubtns/info.png"/>
+            </div>
+            <div id="payoffBtn" class="menuBtn" title="Payoff Panel">
+                <img src="img/quizspin/menubtns/payoff.png"/>
+            </div>
+            <div id="leaderboardBtn" class="menuBtn" title="Leaderboard Panel">
+                <img src="img/quizspin/menubtns/leaderboard.png"/>
+            </div>
+            <div id="profileBtn" class="menuBtn" title="Knowledge Module">
+
+                <img src="img/quizspin/menubtns/about.png"/>
+            </div>
+        </div>
+        <div id="answer-menu">
+            <div id="opta" class="menuBtn answerBtn">A</div>
+            <div id="optb" class="menuBtn answerBtn">B</div>
+            <div id="optc" class="menuBtn answerBtn">C</div>
+            <div id="optd" class="menuBtn answerBtn">D</div>
+        </div>
+        <div id="freespin-counter">
+            <span id="freespin-count"></span> Free Spins Left
+        </div>
+    </div>
+
+</div>
+
+</div>
+<div id="openModal" class="modalDialog">
+    <div>
+       <div id="closingModal">
+        <a href="#close" title="Close" class="close" id="closeModal"></a>
+</div>
+        <!--<h1 style="color:blue;text-align:center">This is a header</h1>-->
+        <h5 style="color:white;text-align:center;margin-top: 50px">Are you the lucky one? Play this exciting Diwali
+            trivia and win great prizes!
+            </br>Enter your valid email and click ‘Play’</h5>
+
+        <div class="modal_text_box"><input type="text" id="txtEmail" style="width: 265px"></div>
+        <div class="modal_text_box">
+            <input type="button" id="submitemail" class="button">
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Javascripts go here  -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/vendor/jquery.easing.1.3.js"></script>
+
+<script src="js/quizspin/quizspin-data.js"></script>
+<script src="js/questionbank.js"></script>
+<script src="js/quizspin/quizspin.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/quizspin/jquery.jSlots.min.js"></script>
+
+
+
+
+
+
+
+
+
+<!-- Game Script-->
+<script type="text/javascript">
+
+
+    var unique_id = "";
+    var user_email = "";
+        var remote_host = "http://quizspinrailsapi.ptotem.in:4568/";
+//    var remote_host = "http://192.168.2.13:3000/";
+   
+
+
+    $('#submitemail').click(function () {
+        $("#slot-handle").css("pointer-events","auto")
+        unique_id = Math.round(+new Date() / 1000);
+        user_email = $('#txtEmail').val();
+        if ($.trim(user_email).length == 0) {
+            alert('Email  are mandatory');
+            e.preventDefault();
+        }
+        if (validateEmail(user_email)) {
+//            my_function_new(user_email,unique_id);
+            user_present(user_email);
+//            my_leader_board();
+        }
+        else {
+            alert('Invalid Email Address please enter valid Email');
+            e.preventDefault();
+        }
+        function validateEmail(sEmail) {
+            var filter = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+            if (filter.test(sEmail)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        $('#closingModal').find('a').get(0).click()
+
+//        my_leader_board();
+
+    })
+
+
+    function my_function_new(user_email, unique_id) {
+        var data_string = {
+            email: user_email,
+            initial_points: unique_id,
+            final_score:0
+        }
+        $.ajax({
+            type: "POST",
+            url: remote_host + "/save_users",
+            dataType: "json",
+            data: data_string,
+            success: function (res) {
+
+                //console.log('success');
+            },
+            error: function (e, msg) {
+                //console.log('error_done');
+            }
+        });
+
+
+    }
+
+
+    function scoring(score_value) {
+        var email = $('#txtEmail').val();
+        //console.log(email)
+        var data_string = {
+            email: email,
+            initial_points: unique_id,
+            current_score: score_value
+        }
+
+        $.ajax({
+            type: "POST",
+            url: remote_host + "save_users_scores",
+            dataType: "json",
+            data: data_string,
+            success: function (res) {
+
+                //console.log('success');
+            },
+            error: function (e, msg) {
+                //console.log('error_done');
+            }
+        });
+        //console.log(unique_id)
+
+    }
+
+
+    $(function () {
+        my_leader_board()
+    })
+
+
+    function my_leader_board() {
+        var data_string = {
+            email: user_email,
+            initial_points: unique_id
+        }
+        $.ajax({
+            //url: remote_host+"org/5417f10a195e61022fff91ee/users/54181598d465d283167f8d26?callback=?",
+            url: remote_host + "get_leaderBoard_data?callback=?",
+//            url: remote_host + "org/5417f10a195e61022fff91ee/users?callback=?",
+//            url: remote_host + "org/5417f10a195e61022fff91ee/users?callback=?",
+            type: 'getJSON', /* Dont use post it JSONP doesnt support */
+            dataType: 'jsonp',
+            success: function (res) {
+                user_email = $('#txtEmail').val();
+//                //console.log(user_email);
+                var name, score;
+                    $('.rank_user').empty();
+                    $('.email_id_user').empty();
+                    $('.credit_user').empty();
+                for (var i = 0; i < res.length; i++) {
+                    name = res[i].email;
+                    var rank=i+1;
+                    if(name==user_email)
+                    {
+                        $(".current_rank").html('<p>Your current position '+rank+'</p>');
+                    }
+                    score = res[i].final_score;
+
+                }
+                for (var i = 0; i < 5; i++) {
+                    name = res[i].email;
+                    var rank=i+1;
+                     score = res[i].final_score;
+                     var str2 = "******";
+                    var withoutLastChunk = name.slice(0, name.lastIndexOf("@"));
+                    var restify = withoutLastChunk.concat(str2);       
+
+                    $(".rank_user").append( rank + '<br>');
+                    $(".email_id_user").append(restify + '<br>');
+                    $(".credit_user").append(score + '<br>');
+                    
+//                    game.credits = score;
+                }
+
+            },
+            error: function (e, msg) {
+                //alert(msg);
+                //console.log(e, msg);
+            }
+        });
+    }
+
+
+    function user_present(user_email) {
+        unique_id = Math.round(+new Date() / 1000);
+//        user_email=$('#txtEmail').val();
+        var data_string1 = {
+            email: user_email
+        }
+        $.ajax({
+            type: "POST",
+            url: remote_host + "/check_user_present",
+            dataType: "json",
+            data: data_string1,
+            success: function (res) {
+                $("#creditsVal").html(res);
+//                $(".current_rank").html(res );
+		game.credits = parseInt(res);
+                //console.log(res);
+            },
+            error: function (e, msg) {
+                my_function_new(user_email, unique_id);
+//                //console.log('error_done');
+            }
+        });
+
+    }
+    $( "#handle-wrapper" ).one( "click", function() {
+//        alert( "This will be displayed only once." );
+$('#openingModal').find('a').get(0).click();
+    })
+
+    //    $.ajax({
+    //        type: "post",
+    //        url: "ajax/example.php",
+    //        data: 'page='+btn_page,
+    //        success: function(data){
+    //            $.ajax({
+    //                var a=data; //edit data here
+    //            type: "post",
+    //                    url: "example.php",
+    //                    data: 'page='+a,
+    //                    success: function(data){
+    //
+    //            });
+    //        });
+    $( "#leaderboardBtn" ).on( "click", function() {
+        my_leader_board();
+    })
+
+
+</script>
+
+
+
+</body>

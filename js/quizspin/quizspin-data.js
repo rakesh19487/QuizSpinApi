@@ -35,6 +35,9 @@ game.credits = 205;
 game.spincost = 10;
 
 window.content = {};
-content.intro="Spin the slots to try your luck. But as they say, you can make your own luck. Answer questions to win big.<br/><br/>And get to 2014 Coins to prove you know it all."
+content.intro="<h2>Welcome to Diwali QuizSpin!</h2>Spin the slots to try your luck! Want more?How about FREE SPINS? Answer the questions to win FREE SPINS and boost your score.<h3>The top 5 winners could win exciting prizes! </h3>"
 content.credits_name="Coins";
+
+
+
 
