@@ -296,7 +296,7 @@ function freeSpin(n) {
             freeSpin(n);
             // $("#handle img").css('pointer-events','none');
 
-        }, 4000);
+        }, 6000);
     }
     else {
         setTimeout(function() {
