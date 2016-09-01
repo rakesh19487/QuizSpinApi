@@ -4,6 +4,7 @@ questionbank.questionsFromTopic = 2;
 questionbank.questions = [
     {
         statement: "Which city is Ptotem based out of?",
+        img: "assets/img/BIHARI1.jpg",
         topic: 'general',
         weight: 1,
 
@@ -27,6 +28,7 @@ questionbank.questions = [
     },
     {
         statement: "When was Ptotem established?",
+        img: "assets/img/BIHARI1.jpg",
         topic: 'general',
         weight: 1,
 
@@ -50,6 +52,7 @@ questionbank.questions = [
     },
    {
        statement: "The flagship of Ptotem is a mobile learning tool. Name it.",
+       img: "assets/img/BIHARI1.jpg",
        topic: 'general',
        weight: 1,
 
@@ -73,6 +76,7 @@ questionbank.questions = [
    },
    {
        statement: "A serious game is a game designed to disseminate ___________",
+       img: "assets/img/BIHARI1.jpg",
        topic: 'general',
        weight: 1,
 
@@ -96,6 +100,7 @@ questionbank.questions = [
    },
    {
        statement: "Ptotem's offerings include",
+       img: "assets/img/BIHARI1.jpg",
        weight: 1,
        topic: 'general',
 
@@ -119,6 +124,7 @@ questionbank.questions = [
    },
    {
        statement: "Ptotem has developed the world's first ever business school themed game for ISB. Which one was it?",
+       img: "assets/img/BIHARI1.jpg",
        weight: 1,
        topic: 'general',
 
@@ -142,6 +148,7 @@ questionbank.questions = [
    },
    {
        statement: "One of Ptotem's games was nominated for an Innovation Award at Nuremberg Toy Fair 2011. Name it.",
+       img: "assets/img/BIHARI1.jpg",
        weight: 1,
        topic: 'specific',
 
@@ -166,6 +173,7 @@ questionbank.questions = [
    {
        statement: "Which of these is Ptotem's flagship Sales Training Game?",
        weight: 1,
+       img: "assets/img/BIHARI1.jpg",
        topic: 'specific',
 
        opta: "QuizSpin",
@@ -188,6 +196,7 @@ questionbank.questions = [
    },
    {
        statement: "Ptotem has developed an interactive web application for this legendary cricketer to celebrate his illustrious career",
+       img: "assets/img/BIHARI1.jpg",
        weight: 1,
        topic: 'specific',
 
@@ -211,6 +220,7 @@ questionbank.questions = [
    },
    {
        statement: "This eCommerce giant is currently using the game-based learning management system that Ptotem has developed.",
+       img: "assets/img/BIHARI1.jpg",
        weight: 1,
        topic: 'specific',
 
@@ -234,6 +244,7 @@ questionbank.questions = [
    },
    {
        statement: "This e-Commerce giant is currently using Ptotem's game based Induction Training Platform.",
+       img: "assets/img/BIHARI1.jpg",
        weight: 1,
        topic: 'specific',
 

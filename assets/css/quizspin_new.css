@@ -224,7 +224,7 @@ html, body {
     width: 51%;
     height: auto;
     top: 41.35%;
-    left: 24%;
+    left: 23%;
     -webkit-perspective: 500px;
     perspective: 500px;
     position: absolute;
@@ -246,7 +246,7 @@ html, body {
 
 #slot1 img, #slot2 img, #slot3 img {
     padding: 5px;
-    width:  55px;;
+    width:  58px;;
     height: auto;
     box-sizing: border-box;
 }
