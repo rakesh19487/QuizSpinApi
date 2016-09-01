@@ -1,11 +1,11 @@
 var questionbank = {};
 questionbank.sequentialQuestions = 4;
-questionbank.questionsFromTopic = 2;
+questionbank.questionsFromTopic = 8;
 questionbank.questions = [
     {
         statement: "The British dish Scotch egg may have been inspired by the Mughlai dish ____________ ______, where hard-boiled eggs are encased in a layer of spicy kofta meat.",
         img: "assets/img/subway/Slide17.JPG",
-        topic: 'general',
+        topic: 'basic',
         weight: 1,
 
         opta: "Egg Chop",
@@ -29,7 +29,7 @@ questionbank.questions = [
     {
         statement: "Sutli Kebab is mostly famous in ________.",
         img: "assets/img/subway/Slide15.JPG",
-        topic: 'general',
+        topic: 'basic',
         weight: 1,
 
         opta: "Hyderabad",
@@ -53,7 +53,7 @@ questionbank.questions = [
    {
        statement: "______ kebab is considered as the oldest version of kebabs.",
        img: "assets/img/subway/Slide14.JPG",
-       topic: 'general',
+       topic: 'basic',
        weight: 1,
 
        opta: "Seekh",
@@ -77,7 +77,7 @@ questionbank.questions = [
    {
        statement: "Reshmi kebab is influenced by the ________.",
        img: "assets/img/subway/Slide12.JPG",
-       topic: 'general',
+       topic: 'basic',
        weight: 1,
 
        opta: "Mughals",
@@ -102,7 +102,7 @@ questionbank.questions = [
        statement: "______ kebab was originated in the camps of Arab and Turkish invaders who used to roast meat chunks skewered on their sword edges.",
        img: "assets/img/subway/Slide1.JPG",
        weight: 1,
-       topic: 'general',
+       topic: 'basic',
 
        opta: "Shish",
        optacorrect: false,
@@ -126,7 +126,7 @@ questionbank.questions = [
        statement: "The number of spices the original recipe of Tunde kebab contained was ____.",
        img: "assets/img/subway/Slide16.JPG",
        weight: 1,
-       topic: 'general',
+       topic: 'basic',
 
        opta: "160",
        optacorrect: true,
@@ -150,7 +150,7 @@ questionbank.questions = [
        statement: "Which kebab gets its name from the fact that its creator had a missing arm?",
        img: "assets/img/subway/Slide16.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'basic',
 
        opta: "Tunde Kebab",
        optacorrect: true,
@@ -174,7 +174,7 @@ questionbank.questions = [
        statement: "__________, the famous traveller has mentioned that Kebab was an integral part of the daily diet of Indian royalty as early as 1200 AD.",
        weight: 1,
        img: "assets/img/subway/Slide9.JPG",
-       topic: 'specific',
+       topic: 'basic',
 
        opta: "Ibn Battuta",
        optacorrect: true,
@@ -198,7 +198,7 @@ questionbank.questions = [
        statement: "Galawati kebab is also known as ________.",
        img: "assets/img/subway/Slide6.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'basic',
 
        opta: "Shawarma",
        optacorrect: false,
@@ -222,7 +222,7 @@ questionbank.questions = [
        statement: "Shami kebab is a popular kebab in _________.",
        img: "assets/img/subway/Slide13.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "India",
        optacorrect: false,
@@ -246,7 +246,7 @@ questionbank.questions = [
        statement: "Doner Kebab is of Turkish origin and is similar to _________.",
        img: "assets/img/subway/Slide5.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "Shawarma",
        optacorrect: true,
@@ -271,7 +271,7 @@ questionbank.questions = [
        statement: "Strings are used in tying this kebab to the skewer because the pieces of meat are so soft that they tend to fall down. Which kebab is this?",
        img: "assets/img/subway/Slide15.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "Shish kebab",
        optacorrect: false,
@@ -295,7 +295,7 @@ questionbank.questions = [
        statement: "Shikhampur kebab is also known as _________________.",
        weight: 1,
        img: "assets/img/subway/Slide19.JPG",
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "Phool ke kebab",
        optacorrect: false,
@@ -319,7 +319,7 @@ questionbank.questions = [
        statement: "Shikhampur or Patthar ke kebab was originally made under the patronage of the Nizam by heating the stone on which it is placed.",
        img: "assets/img/subway/Slide19.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "True",
        optacorrect: true,
@@ -343,7 +343,7 @@ questionbank.questions = [
        statement: "Chapli kebab is called chapli because of it's flat look.",
        img: "assets/img/subway/Slide3.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "True",
        optacorrect: true,
@@ -367,7 +367,7 @@ questionbank.questions = [
        statement: "Chaprikh is a Pashto word meaning flat. A kebab gets its name from a derivation of this word. Which kebab is this?",
        img: "assets/img/subway/Slide3.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "Chapli Kebab",
        optacorrect: true,
@@ -392,7 +392,7 @@ questionbank.questions = [
        statement: "Kakori Kabab is one of the most famous dishes of _______ cuisine.",
        weight: 1,
        img: "assets/img/subway/Slide8.JPG",
-       topic: 'specific',
+       topic: 'intermediate',
 
        opta: "Awadhi",
        optacorrect: true,
@@ -416,7 +416,7 @@ questionbank.questions = [
        statement: "India was traditionally the birthplace of kebabs.",
        img: "assets/img/subway/Slide11.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "True",
        optacorrect: false,
@@ -440,7 +440,7 @@ questionbank.questions = [
        statement: "Which country are kebabs originally from?",
        img: "assets/img/subway/Slide10.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Turkey",
        optacorrect: true,
@@ -464,7 +464,7 @@ questionbank.questions = [
        statement: "Which food item was created when Turkish soldiers grilled chunks of freshly hunted animals skewed on swords on open field fires.",
        img: "assets/img/subway/Slide11.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Kebab",
        optacorrect: true,
@@ -488,7 +488,7 @@ questionbank.questions = [
        statement: "This kebab, made from chickpeas, chicken and eggs, was created in the Mughal kitchens by Syrian chefs.",
        img: "assets/img/subway/Slide17.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Shami Kebab",
        optacorrect: true,
@@ -513,7 +513,7 @@ questionbank.questions = [
        statement: "This kebab was created for Nawab Wajid Ali Shah who wanted to eat kebabs but had no teeth.",
        weight: 1,
        img: "assets/img/subway/Slide7.JPG",
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Galawati Kebab",
        optacorrect: true,
@@ -537,7 +537,7 @@ questionbank.questions = [
        statement: "A family of meatball dishes, this food is eaten across South Asian. and Middle Eastern cuisine. A vegetarian version of this in curry is eaten across India.",
        img: "assets/img/subway/Slide18.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Falafel",
        optacorrect: false,
@@ -561,7 +561,7 @@ questionbank.questions = [
        statement: "This kebab was created for Nawab Wajid Ali Shah who wanted to eat kebabs but had no teeth.",
        img: "assets/img/subway/Slide6.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Galawati Kebab",
        optacorrect: true,
@@ -585,7 +585,7 @@ questionbank.questions = [
        statement: "The word kebab is said to originate from the ______ language.",
        img: "assets/img/subway/Slide9.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Persian",
        optacorrect: false,
@@ -609,7 +609,7 @@ questionbank.questions = [
        statement: "The variation of the modern day Bihari kebab is a purely....",
        img: "assets/img/subway/Slide2.JPG",
        weight: 1,
-       topic: 'specific',
+       topic: 'Advanced',
 
        opta: "Bihari and Bengali take on the meat.",
        optacorrect: true,
