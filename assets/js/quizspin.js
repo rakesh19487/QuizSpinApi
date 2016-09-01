@@ -29,6 +29,7 @@ var quesbank = [];
 
 $(function() {
     initGame();
+    mobiledetect()
 });
 
 function initGame() {
@@ -464,8 +465,9 @@ function know_more_image(img,freespin){
         $("#messages").fadeOut(500, function() {
             $("#messages").css("display", "table");
             $("#messages").removeClass("environment");
-            $("#messageBox").html("<img src='" + img + "' style='width:100%;height:auto;'><div class='exit_message' style='position: absolute;top: 0;right: 0;font-size: 0.6em;background: rgba(140, 72, 72, 0.8);padding: 5px;cursor:pointer;'>Exit</div>")
+            $("#messageBox").html("<img src='" + img + "' id='know_more_img'><div class='exit_message' style='position: absolute;top: 0;right: 0;font-size: 0.6em;background: rgba(140, 72, 72, 0.8);padding: 5px;cursor:pointer;'>Exit</div>")
             $("#messages").fadeIn(500);
+            mobiledetect()
             close_know_more(freespin);    
         })
     });
@@ -475,5 +477,16 @@ function close_know_more(freespin){
     $('.exit_message').unbind('click').bind('click',function(){
         freeSpin(freespin);
     });
+}
+
+function mobiledetect(){
+    if (/Mobi/.test(navigator.userAgent)) {
+        $('#know_more_img').css('width','100%');
+        $('#know_more_img').css('height','auto');
+    }
+    else{
+        $('#know_more_img').css('width','50%');
+        $('#know_more_img').css('height','50%');   
+    }
 }
 
