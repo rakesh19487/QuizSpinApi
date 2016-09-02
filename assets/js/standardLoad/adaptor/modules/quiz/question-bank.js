@@ -1,6 +1,6 @@
 var questionbank = {};
 questionbank.sequentialQuestions = 4;
-questionbank.questionsFromTopic = 2;
+questionbank.questionsFromTopic = 8;
 questionbank.questions = [
     {
         statement: "Where did Colonel Sanders first sell Fried Chicken?",
