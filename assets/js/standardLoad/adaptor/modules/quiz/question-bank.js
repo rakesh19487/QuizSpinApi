@@ -1,349 +1,373 @@
 var questionbank = {};
 questionbank.sequentialQuestions = 4;
-questionbank.questionsFromTopic = 8;
+questionbank.questionsFromTopic = 2;
 questionbank.questions = [
     {
-        statement: "The British dish Scotch egg may have been inspired by the Mughlai dish ____________ ______, where hard-boiled eggs are encased in a layer of spicy kofta meat.",
-        img: "assets/img/subway/Slide17.JPG",
-        topic: 'basic',
+        statement: "Where did Colonel Sanders first sell Fried Chicken?",
+        img: "assets/img/subway/slide17.JPG",
+        topic: 'Basic',
         weight: 1,
 
-        opta: "Egg Chop",
-        optacorrect: false,
-        optapoints: "0",
+        opta: "A Gas Station",
+        optacorrect: true,
+        optapoints: "10",
 
-        optb: "Nargisi Kofta",
-        optbcorrect: true,
+        optb: "At a burger joint",
+        optbcorrect: false,
         optbpoints: "10",
 
-        optc: "Plantain Kofta",
+        optc: "On a street stall",
         optccorrect: false,
         optcpoints: "0",
 
-        optd: "Malai Kofta",
+        optd: "With a joint Pizza Delivery Service",
         optdcorrect: false,
         optdpoints: "0",
 
-        Slide_id:321
+        slide_id:321
     },
     {
-        statement: "Sutli Kebab is mostly famous in ________.",
-        img: "assets/img/subway/Slide15.JPG",
-        topic: 'basic',
+        statement: "How many spices are claimed to be used in the KFC fried chicken?",
+        img: "assets/img/subway/slide15.JPG",
+        topic: 'Basic',
         weight: 1,
 
-        opta: "Hyderabad",
+        opta: "1",
         optacorrect: false,
         optapoints: "0",
 
-        optb: "Bangladesh",
+        optb: "11",
         optbcorrect: true,
         optbpoints: "10",
 
-        optc: "Lahore",
+        optc: "19",
         optccorrect: false,
         optcpoints: "0",
 
-        optd: "Mumbai",
+        optd: "0",
         optdcorrect: false,
         optdpoints: "0",
 
-        Slide_id:321
+        slide_id:321
     },
    {
-       statement: "______ kebab is considered as the oldest version of kebabs.",
-       img: "assets/img/subway/Slide14.JPG",
-       topic: 'basic',
+       statement: "What is KFC a division of?",
+       img: "assets/img/subway/slide14.JPG",
+       topic: 'general',
        weight: 1,
 
-       opta: "Seekh",
+       opta: "PepsiCo",
        optacorrect: false,
        optapoints: "0",
 
-       optb: "Shish",
+       optb: "KFC Inc.",
        optbcorrect: true,
        optbpoints: "10",
 
-       optc: "Bihari",
+       optc: "USKO",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "Kasturi",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "Reshmi kebab is influenced by the ________.",
-       img: "assets/img/subway/Slide12.JPG",
-       topic: 'basic',
-       weight: 1,
-
-       opta: "Mughals",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "Greeks",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Turks",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "None of the above",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "______ kebab was originated in the camps of Arab and Turkish invaders who used to roast meat chunks skewered on their sword edges.",
-       img: "assets/img/subway/Slide1.JPG",
-       weight: 1,
-       topic: 'basic',
-
-       opta: "Shish",
-       optacorrect: false,
-       optapoints: "0",
-
-       optb: "Bihari",
-       optbcorrect: true,
-       optbpoints: "10",
-
-       optc: "Tunde",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "Seekh",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "The number of spices the original recipe of Tunde kebab contained was ____.",
-       img: "assets/img/subway/Slide16.JPG",
-       weight: 1,
-       topic: 'basic',
-
-       opta: "160",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "10",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "4",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "None of the above",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "Which kebab gets its name from the fact that its creator had a missing arm?",
-       img: "assets/img/subway/Slide16.JPG",
-       weight: 1,
-       topic: 'basic',
-
-       opta: "Tunde Kebab",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "Hariyali Kebab",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Bihari Kebab",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "Seekh Kebab",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "__________, the famous traveller has mentioned that Kebab was an integral part of the daily diet of Indian royalty as early as 1200 AD.",
-       weight: 1,
-       img: "assets/img/subway/Slide9.JPG",
-       topic: 'basic',
-
-       opta: "Ibn Battuta",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "Vitus Berring",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Heman Cortes",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "Vasco da Gama",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "Galawati kebab is also known as ________.",
-       img: "assets/img/subway/Slide6.JPG",
-       weight: 1,
-       topic: 'basic',
-
-       opta: "Shawarma",
-       optacorrect: false,
-       optapoints: "0",
-
-       optb: "Gilawati kebab",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Tunde kebab",
-       optccorrect: true,
-       optcpoints: "10",
-
-       optd: "Shish kebab",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "Shami kebab is a popular kebab in _________.",
-       img: "assets/img/subway/Slide13.JPG",
-       weight: 1,
-       topic: 'intermediate',
-
-       opta: "India",
-       optacorrect: false,
-       optapoints: "0",
-
-       optb: "Pakistan",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Bangladesh",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "All the above",
+       optd: "Yum Brands",
        optdcorrect: true,
        optdpoints: "10",
 
-       Slide_id:321
+       slide_id:321
    },
    {
-       statement: "Doner Kebab is of Turkish origin and is similar to _________.",
-       img: "assets/img/subway/Slide5.JPG",
+       statement: "What does KFC cook it's chicken in after being coated in the batter?",
+       img: "assets/img/subway/slide12.JPG",
+       topic: 'Basic',
        weight: 1,
-       topic: 'intermediate',
 
-       opta: "Shawarma",
-       optacorrect: true,
-       optapoints: "10",
+       opta: "Barbeque",
+       optacorrect: false,
+       optapoints: "0",
 
-       optb: "Chicken lollipop",
+       optb: "Microwave",
        optbcorrect: false,
        optbpoints: "0",
 
-       optc: "Tangdi kebab",
+       optc: "Pressure cooker",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "Chicken tikka",
+       optd: "Pressure frier",
+       optdcorrect: true,
+       optdpoints: "10",
+
+       slide_id:321
+   },
+   {
+       statement: "What is the current tagline that KFC uses in India?",
+       img: "assets/img/subway/slide1.JPG",
+       weight: 1,
+       topic: 'Basic',
+
+       opta: "Finger Lickin' Good",
+       optacorrect: true,
+       optapoints: "10",
+
+       optb: "Nobody does chicken like KFC",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "Kluck-Kluck-a-Taco",
+       optccorrect: false,
+       optcpoints: "0",
+
+       optd: "I'm lovin' it",
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
+       slide_id:321
+   },
+   {
+       statement: "What country follows the tradition of celebrating christmas by having KFC?",
+       img: "assets/img/subway/slide16.JPG",
+       weight: 1,
+       topic: 'Basic',
+
+       opta: "Japan",
+       optacorrect: true,
+       optapoints: "10",
+
+       optb: "Australia",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "China",
+       optccorrect: false,
+       optcpoints: "0",
+
+       optd: "Germany",
+       optdcorrect: false,
+       optdpoints: "0",
+
+       slide_id:321
+   },
+   {
+       statement: "KFC is an abbreviation of...?",
+       img: "assets/img/subway/slide16.JPG",
+       weight: 1,
+       topic: 'Basic',
+
+       opta: "Kentucky Fried Chicken",
+       optacorrect: true,
+       optapoints: "10",
+
+       optb: "Kellogs Fine Crisps",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "Kentucky's Finest Chicken",
+       optccorrect: false,
+       optcpoints: "0",
+
+       optd: "Kellogs Fried Chicken",
+       optdcorrect: false,
+       optdpoints: "0",
+
+       slide_id:321
+   },
+   {
+       statement: "KFC started the tradition of eating out of ____________.",
+       weight: 1,
+       img: "assets/img/subway/slide9.JPG",
+       topic: 'Intermediate',
+
+       opta: "Buckets",
+       optacorrect: true,
+       optapoints: "10",
+
+       optb: "Plates",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "Boxes",
+       optccorrect: false,
+       optcpoints: "0",
+
+       optd: "Paper Bags",
+       optdcorrect: false,
+       optdpoints: "0",
+
+       slide_id:321
+   },
+   {
+       statement: "_____ & _____ are the only two known ingredients of the eleven that are used in making the KFC chickien.",
+       img: "assets/img/subway/slide6.JPG",
+       weight: 1,
+       topic: 'intermediate',
+
+       opta: "Salt and Pepper",
+       optacorrect: true,
+       optapoints: "10",
+
+       optb: "Ginger and chilli",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "Salt and Garlic",
+       optccorrect: true,
+       optcpoints: "10",
+
+       optd: "Salt and Chilli",
+       optdcorrect: false,
+       optdpoints: "0",
+
+       slide_id:321
+   },
+   {
+       statement: "Where is KFC headquartered in?",
+       img: "assets/img/subway/slide13.JPG",
+       weight: 1,
+       topic: 'intermediate',
+
+       opta: "Frankfort",
+       optacorrect: false,
+       optapoints: "0",
+
+       optb: "Lexington",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "Louisville",
+       optccorrect: true,
+       optcpoints: "10",
+
+       optd: "Bowling Green",
+       optdcorrect: false,
+       optdpoints: "0",
+
+       slide_id:321
+   },
+   {
+       statement: "What was KFC previously named as?",
+       img: "assets/img/subway/slide5.JPG",
+       weight: 1,
+       topic: 'intermediate',
+
+       opta: "Sanders court and Café",
+       optacorrect: true,
+       optapoints: "10",
+
+       optb: "Kentucky Café",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "Colonel Sanders café",
+       optccorrect: false,
+       optcpoints: "0",
+
+       optd: "Kentucky Chicken house",
+       optdcorrect: false,
+       optdpoints: "0",
+
+       slide_id:321
    }
     ,
    {
-       statement: "Strings are used in tying this kebab to the skewer because the pieces of meat are so soft that they tend to fall down. Which kebab is this?",
-       img: "assets/img/subway/Slide15.JPG",
+       statement: "Who was KFC founded by?",
+       img: "assets/img/subway/slide15.JPG",
        weight: 1,
-       topic: 'intermediate',
+       topic: 'Intermediate',
 
-       opta: "Shish kebab",
+       opta: "Harlem Sanders",
        optacorrect: false,
        optapoints: "0",
 
-       optb: "Shami kebab",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Sutli kebab",
-       optccorrect: true,
-       optcpoints: "10",
-
-       optd: "None of the above",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "Shikhampur kebab is also known as _________________.",
-       weight: 1,
-       img: "assets/img/subway/Slide19.JPG",
-       topic: 'intermediate',
-
-       opta: "Phool ke kebab",
-       optacorrect: false,
-       optapoints: "0",
-
-       optb: "Patthar ke kebab",
+       optb: "Harland Sanders",
        optbcorrect: true,
        optbpoints: "10",
 
-       optc: "Malai kebab",
+       optc: "Harvey Sanders",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "None of the above",
+       optd: "Harold Sanders",
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
+       slide_id:321
    },
    {
-       statement: "Shikhampur or Patthar ke kebab was originally made under the patronage of the Nizam by heating the stone on which it is placed.",
-       img: "assets/img/subway/Slide19.JPG",
+       statement: "Where in India was the first KFC launched?",
        weight: 1,
-       topic: 'intermediate',
+       img: "assets/img/subway/slide19.JPG",
+       topic: 'Intermediate',
 
-       opta: "True",
+       opta: "Bangalore",
        optacorrect: true,
        optapoints: "10",
 
-       optb: "False",
+       optb: "Mumbai",
        optbcorrect: false,
        optbpoints: "0",
+
+       optc: "Kolkata",
+       optccorrect: false,
+       optcpoints: "0",
+
+       optd: "Chennai",
+       optdcorrect: false,
+       optdpoints: "0",
+
+       slide_id:321
+   },
+   {
+       statement: "The first Kentucky Fried Chicken franchise opened in _____ in 1952.",
+       img: "assets/img/subway/slide19.JPG",
+       weight: 1,
+       topic: 'Intermediate',
+
+       opta: "Texas",
+       optacorrect: false,
+       optapoints: "0",
+
+       optb: "Florida",
+       optbcorrect: false,
+       optbpoints: "0",
+
+       optc: "California",
+       optccorrect: false,
+       optcpoints: "0",
+
+       optd: "Utah",
+       optdcorrect: true,
+       optdpoints: "10",
+
+       slide_id:321
+   },
+   {
+       statement: "Colonel Sanders was a real colonel.",
+       img: "assets/img/subway/slide3.JPG",
+       weight: 1,
+       topic: 'Intermediate',
+
+       opta: "True",
+       optacorrect: false,
+       optapoints: "0",
+
+       optb: "False",
+       optbcorrect: true,
+       optbpoints: "10",
 
        optc: "Maybe",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "Not A ",
+       optd: "Not Applicable",
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
+       slide_id:321
    },
    {
-       statement: "Chapli kebab is called chapli because of it's flat look.",
-       img: "assets/img/subway/Slide3.JPG",
+       statement: "KFC Started in a Gas Station.",
+       img: "assets/img/subway/slide3.JPG",
        weight: 1,
-       topic: 'intermediate',
+       topic: 'Advanced',
 
        opta: "True",
        optacorrect: true,
@@ -361,66 +385,42 @@ questionbank.questions = [
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
+       slide_id:321
    },
-   {
-       statement: "Chaprikh is a Pashto word meaning flat. A kebab gets its name from a derivation of this word. Which kebab is this?",
-       img: "assets/img/subway/Slide3.JPG",
-       weight: 1,
-       topic: 'intermediate',
 
-       opta: "Chapli Kebab",
+   {
+       statement: "Colonel Sanders once did a job of a fireman in the U.S. railway company.",
+       weight: 1,
+       img: "assets/img/subway/slide8.JPG",
+       topic: 'Advanced',
+
+       opta: "True",
        optacorrect: true,
        optapoints: "10",
 
-       optb: "Kasturi Kebab",
+       optb: "False",
        optbcorrect: false,
        optbpoints: "0",
 
-       optc: "Hariyali Kebab",
+       optc: "Maybe",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "None of the above",
+       optd: "Not Applicable",
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
-   },
-
-   {
-       statement: "Kakori Kabab is one of the most famous dishes of _______ cuisine.",
-       weight: 1,
-       img: "assets/img/subway/Slide8.JPG",
-       topic: 'intermediate',
-
-       opta: "Awadhi",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "Mughlai",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Hyderabadi",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "Chettinad",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
+       slide_id:321
    },
    {
-       statement: "India was traditionally the birthplace of kebabs.",
-       img: "assets/img/subway/Slide11.JPG",
+       statement: "Colonel Sanders was one of the first cooks to use a pressure fryer to fry his chicken.",
+       img: "assets/img/subway/slide11.JPG",
        weight: 1,
        topic: 'Advanced',
 
        opta: "True",
-       optacorrect: false,
-       optapoints: "0",
+       optacorrect: true,
+       optapoints: "10",
 
        optb: "False",
        optbcorrect: true,
@@ -429,125 +429,76 @@ questionbank.questions = [
        optc: "Maybe",
        optccorrect: false,
        optcpoints: "0",
-
+       
        optd: "Not A ",
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
+       slide_id:321
    },
    {
-       statement: "Which country are kebabs originally from?",
-       img: "assets/img/subway/Slide10.JPG",
+       statement: "Amongst the many people who tried replicating the famous mix of KFC, only ___________ came the closest to it.",
+       img: "assets/img/subway/slide10.JPG",
        weight: 1,
-       topic: 'Advanced',
+       topic: 'Advanced'
 
-       opta: "Turkey",
+       opta: "Ron Douglas",
        optacorrect: true,
        optapoints: "10",
 
-       optb: "Saudi Arabia",
+       optb: "Gordon Ramsay",
        optbcorrect: false,
        optbpoints: "0",
 
-       optc: "Pakistan",
+       optc: "Rachael Ray",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "None of the above",
+       optd: "Wolfgang Puck",
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
+       slide_id:321
    },
    {
-       statement: "Which food item was created when Turkish soldiers grilled chunks of freshly hunted animals skewed on swords on open field fires.",
-       img: "assets/img/subway/Slide11.JPG",
+       statement: "Last year, KFC launched a cartoon video game on the founder himself. What is the game named as?",
+       img: "assets/img/subway/slide11.JPG",
        weight: 1,
-       topic: 'Advanced',
+       topic: 'Advanced'
 
-       opta: "Kebab",
-       optacorrect: true,
-       optapoints: "10",
+       opta: "Colonel Sanders",
+       optacorrect: false,
+       optapoints: "0",
 
-       optb: "Pasta",
-       optbcorrect: false,
-       optbpoints: "0",
+       optb: "Colonel Quest",
+       optbcorrect: true,
+       optbpoints: "10,
 
-       optc: "Sushi",
+       optc: "Adventures by Colonel",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "None of the above",
+       optd: "Colonel- The Masterchef",
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
+       slide_id:321
    },
        {
-       statement: "This kebab, made from chickpeas, chicken and eggs, was created in the Mughal kitchens by Syrian chefs.",
-       img: "assets/img/subway/Slide17.JPG",
+       statement: "KFC has been using the same recipe since 1940 to cook the fried chicken.",
+       img: "assets/img/subway/slide17.JPG",
        weight: 1,
-       topic: 'Advanced',
+       topic: 'Advanced
 
-       opta: "Shami Kebab",
+       opta: "True",
        optacorrect: true,
        optapoints: "10",
 
-       optb: "Boti Kebab",
+       optb: "False
        optbcorrect: false,
        optbpoints: "0",
 
-       optc: "Reshmi Kebab",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "Falafel",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-
-   {
-       statement: "This kebab was created for Nawab Wajid Ali Shah who wanted to eat kebabs but had no teeth.",
-       weight: 1,
-       img: "assets/img/subway/Slide7.JPG",
-       topic: 'Advanced',
-
-       opta: "Galawati Kebab",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "Tangdi Kebab",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Boti Kebab",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "None of the above",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "A family of meatball dishes, this food is eaten across South Asian. and Middle Eastern cuisine. A vegetarian version of this in curry is eaten across India.",
-       img: "assets/img/subway/Slide18.JPG",
-       weight: 1,
-       topic: 'Advanced',
-
-       opta: "Falafel",
-       optacorrect: false,
-       optapoints: "0",
-
-       optb: "Kofta",
-       optbcorrect: true,
-       optbpoints: "0",
-
-       optc: "Pakoda",
+       optc: "Maybe",
        optccorrect: false,
        optcpoints: "0",
 
@@ -555,80 +506,8 @@ questionbank.questions = [
        optdcorrect: false,
        optdpoints: "0",
 
-       Slide_id:321
-   },
-   {
-       statement: "This kebab was created for Nawab Wajid Ali Shah who wanted to eat kebabs but had no teeth.",
-       img: "assets/img/subway/Slide6.JPG",
-       weight: 1,
-       topic: 'Advanced',
-
-       opta: "Galawati Kebab",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "Tangdi Kebab",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Boti Kebab",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "None of the above",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   },
-   {
-       statement: "The word kebab is said to originate from the ______ language.",
-       img: "assets/img/subway/Slide9.JPG",
-       weight: 1,
-       topic: 'Advanced',
-
-       opta: "Persian",
-       optacorrect: false,
-       optapoints: "0",
-
-       optb: "Turks",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Central Asians",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "Arabic",
-       optdcorrect: true,
-       optdpoints: "10",
-
-       Slide_id:321
-   },
-   {
-       statement: "The variation of the modern day Bihari kebab is a purely....",
-       img: "assets/img/subway/Slide2.JPG",
-       weight: 1,
-       topic: 'Advanced',
-
-       opta: "Bihari and Bengali take on the meat.",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "Bihari and Marathi take on the meat.",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "Bihari and Assamese take on the meat.",   
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "None of the above",
-       optdcorrect: true,
-       optdpoints: "10",
-
-       Slide_id:321
-   }  
+       slide_id:321
+   }
 ];
 
 //questionbank.questions=parent.getQuestionsFromBank(parent.currentIntegratedGame);
