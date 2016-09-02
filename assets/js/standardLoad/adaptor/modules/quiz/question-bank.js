@@ -248,15 +248,15 @@ questionbank.questions = [
        weight: 1,
        topic: 'intermediate',
 
-       opta: "Sanders court and Café",
+       opta: "Sanders court and Cafe",
        optacorrect: true,
        optapoints: "10",
 
-       optb: "Kentucky Café",
+       optb: "Kentucky Cafe",
        optbcorrect: false,
        optbpoints: "0",
 
-       optc: "Colonel Sanders café",
+       optc: "Colonel Sanders cafe",
        optccorrect: false,
        optcpoints: "0",
 
