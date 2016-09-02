@@ -440,7 +440,7 @@ questionbank.questions = [
        statement: "Amongst the many people who tried replicating the famous mix of KFC, only ___________ came the closest to it.",
        img: "assets/img/subway/slide10.JPG",
        weight: 1,
-       topic: 'Advanced'
+       topic: 'Advanced',
 
        opta: "Ron Douglas",
        optacorrect: true,
@@ -464,7 +464,7 @@ questionbank.questions = [
        statement: "Last year, KFC launched a cartoon video game on the founder himself. What is the game named as?",
        img: "assets/img/subway/slide11.JPG",
        weight: 1,
-       topic: 'Advanced'
+       topic: 'Advanced',
 
        opta: "Colonel Sanders",
        optacorrect: false,
@@ -472,7 +472,7 @@ questionbank.questions = [
 
        optb: "Colonel Quest",
        optbcorrect: true,
-       optbpoints: "10,
+       optbpoints: "10",
 
        optc: "Adventures by Colonel",
        optccorrect: false,
@@ -488,13 +488,13 @@ questionbank.questions = [
        statement: "KFC has been using the same recipe since 1940 to cook the fried chicken.",
        img: "assets/img/subway/slide17.JPG",
        weight: 1,
-       topic: 'Advanced
+       topic: 'Advanced',
 
        opta: "True",
        optacorrect: true,
        optapoints: "10",
 
-       optb: "False
+       optb: "False",
        optbcorrect: false,
        optbpoints: "0",
 
