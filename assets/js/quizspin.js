@@ -288,13 +288,11 @@ function freeSpin(n) {
     setTimeout(function() { $("#messages").fadeOut(); }, 500);
     if(n>=1) {
         setTimeout(function() {
-            // $("#handle img").css('pointer-events','auto');
             $("#handle img").trigger('click');
             setTimeout(pullHandle(), 3000)
             $(".slot-item-6 img").attr("src", "assets/img/slotitems/7.png");
             n--;
             freeSpin(n);
-            // $("#handle img").css('pointer-events','none');
 
         }, 6000);
     }

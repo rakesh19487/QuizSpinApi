@@ -507,55 +507,6 @@ questionbank.questions = [
        optdpoints: "0",
 
        Slide_id:321
-   },
-{
-           statement: "The Claudia Sanders Dinner House was named after the colonel's ….?",
-           img: "assets/img/kfc/KM10.jpg",
-       weight: 1,
-       topic: 'Advanced',
-
-       opta: "His 2nd wife",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "His daughter",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "His mother",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "His 1st wife",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
-   }
-    ,
-    {
-       statement: "KFC franchise was first opened in?",
-       img: "assets/img/kfc/KM9.jpg",
-       weight: 1,
-       topic: 'Advanced',
-
-       opta: "Japan",
-       optacorrect: true,
-       optapoints: "10",
-
-       optb: "England",
-       optbcorrect: false,
-       optbpoints: "0",
-
-       optc: "New Zealand",
-       optccorrect: false,
-       optcpoints: "0",
-
-       optd: "Philippines",
-       optdcorrect: false,
-       optdpoints: "0",
-
-       Slide_id:321
    }
 ];
 
