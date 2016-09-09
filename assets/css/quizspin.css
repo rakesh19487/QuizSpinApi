@@ -59,7 +59,7 @@ img {
     left: 0;
 }
 
-.no-click { pointer-events: none; }
+.no-click { pointer-events: none !important; }
 
 #blank .environment { z-index: 3;}
 

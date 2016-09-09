@@ -169,7 +169,7 @@ function pullHandle() {
     machine2.shuffle(4);
     machine3.shuffle(5, function() {
         processCombo(machine1, machine2, machine3);
-        $("#handle img").removeClass("no-click");
+        $("#handle img").css('pointer-events','auto');
     });
 
     m.animate({
@@ -178,7 +178,7 @@ function pullHandle() {
         {
             start:
                 function() {
-                    m.addClass("no-click");
+                    $("#handle img").css('pointer-events','none');
                 },
 
             step:
@@ -224,6 +224,7 @@ function processCombo(machine1, machine2, machine3) {
     if(free===false)
     {
         if(machine1.active == 5 || machine2.active == 5 || machine3.active == 5) {
+                console.log('ddd');
                 free=true;
                 playQuiz();
         }
@@ -287,12 +288,15 @@ function freeSpin(n) {
 
     setTimeout(function() { $("#messages").fadeOut(); }, 500);
     if(n>=1) {
+        $("#handle img").css('pointer-events','none');
         setTimeout(function() {
+            $("#handle img").css('pointer-events','auto');
             $("#handle img").trigger('click');
             setTimeout(pullHandle(), 3000)
             $(".slot-item-6 img").attr("src", "assets/img/slotitems/7.png");
             n--;
             freeSpin(n);
+
 
         }, 6000);
     }

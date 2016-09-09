@@ -1,10 +1,10 @@
-var questionbank = {};
+﻿var questionbank = {};
 questionbank.sequentialQuestions = 4;
 questionbank.questionsFromTopic = 8;
 questionbank.questions = [
     {
         statement: "Where did Colonel Sanders first sell Fried Chicken?",
-        img: "assets/img/kfc/KM1.jpg",
+        img: "assets/img/kfc/Slide3.JPG",
         topic: 'Basic',
         weight: 1,
 
@@ -28,7 +28,7 @@ questionbank.questions = [
     },
     {
         statement: "How many spices are claimed to be used in the KFC fried chicken?",
-        img: "assets/img/kfc/KM2.jpg",
+        img: "assets/img/kfc/Slide9.JPG",
         topic: 'Basic',
         weight: 1,
 
@@ -52,7 +52,7 @@ questionbank.questions = [
     },
    {
        statement: "What is KFC a division of?",
-       img: "assets/img/kfc/KM3.jpg",
+       img: "assets/img/kfc/Slide15.JPG",
        topic: 'general',
        weight: 1,
 
@@ -76,7 +76,7 @@ questionbank.questions = [
    },
    {
        statement: "What does KFC cook it's chicken in after being coated in the batter?",
-       img: "assets/img/kfc/KM4.jpg",
+       img: "assets/img/kfc/Slide16.JPG",
        topic: 'Basic',
        weight: 1,
 
@@ -99,8 +99,8 @@ questionbank.questions = [
        Slide_id:321
    },
    {
-       statement: "What is the current tagline that KFC uses in India?",
-       img: "assets/img/kfc/KM5.jpg",
+       statement: "Which of these was a slogan used by KFC?",
+       img: "assets/img/kfc/Slide5.JPG",
        weight: 1,
        topic: 'Basic',
 
@@ -108,7 +108,7 @@ questionbank.questions = [
        optacorrect: true,
        optapoints: "10",
 
-       optb: "Nobody does chicken like KFC",
+       optb: "Nobody eats chicken like KFC",
        optbcorrect: false,
        optbpoints: "0",
 
@@ -124,7 +124,7 @@ questionbank.questions = [
    },
    {
        statement: "What country follows the tradition of celebrating christmas by having KFC?",
-       img: "assets/img/kfc/KM6.jpg",
+       img: "assets/img/kfc/Slide17.JPG",
        weight: 1,
        topic: 'Basic',
 
@@ -148,7 +148,7 @@ questionbank.questions = [
    },
    {
        statement: "KFC is an abbreviation of...?",
-       img: "assets/img/kfc/KM7.jpg",
+       img: "assets/img/kfc/Slide18.JPG",
        weight: 1,
        topic: 'Basic',
 
@@ -173,7 +173,7 @@ questionbank.questions = [
    {
        statement: "KFC started the tradition of eating out of ____________.",
        weight: 1,
-       img: "assets/img/kfc/KM8.jpg",
+       img: "assets/img/kfc/Slide19.JPG",
        topic: 'Intermediate',
 
        opta: "Buckets",
@@ -196,7 +196,7 @@ questionbank.questions = [
    },
    {
        statement: "_____ & _____ are the only two known ingredients of the eleven that are used in making the KFC chickien.",
-       img: "assets/img/kfc/KM10.jpg",
+       img: "assets/img/kfc/Slide20.JPG",
        weight: 1,
        topic: 'intermediate',
 
@@ -220,7 +220,7 @@ questionbank.questions = [
    },
    {
        statement: "Where is KFC headquartered in?",
-       img: "assets/img/kfc/KM11.jpg",
+       img: "assets/img/kfc/Slide21.JPG",
        weight: 1,
        topic: 'intermediate',
 
@@ -243,12 +243,12 @@ questionbank.questions = [
        Slide_id:321
    },
    {
-       statement: "What was KFC previously named as?",
-       img: "assets/img/kfc/KM12.jpg",
+       statement: "What was KFC's predecessor called?",
+       img: "assets/img/kfc/Slide22.JPG",
        weight: 1,
        topic: 'intermediate',
 
-       opta: "Sanders court and Cafe",
+       opta: "Sanders Court and Cafe",
        optacorrect: true,
        optapoints: "10",
 
@@ -269,7 +269,7 @@ questionbank.questions = [
     ,
    {
        statement: "Who was KFC founded by?",
-       img: "assets/img/kfc/KM13.jpg",
+       img: "assets/img/kfc/Slide23.JPG",
        weight: 1,
        topic: 'Intermediate',
 
@@ -294,7 +294,7 @@ questionbank.questions = [
    {
        statement: "Where in India was the first KFC launched?",
        weight: 1,
-       img: "assets/img/kfc/KM14.jpg",
+       img: "assets/img/kfc/Slide24.JPG",
        topic: 'Intermediate',
 
        opta: "Bangalore",
@@ -317,7 +317,7 @@ questionbank.questions = [
    },
    {
        statement: "The first Kentucky Fried Chicken franchise opened in _____ in 1952.",
-       img: "assets/img/kfc/KM1.jpg",
+       img: "assets/img/kfc/Slide25.JPG",
        weight: 1,
        topic: 'Intermediate',
 
@@ -341,7 +341,7 @@ questionbank.questions = [
    },
    {
        statement: "Colonel Sanders was a real colonel.",
-       img: "assets/img/kfc/KM2.jpg",
+       img: "assets/img/kfc/Slide26.JPG",
        weight: 1,
        topic: 'Intermediate',
 
@@ -365,7 +365,7 @@ questionbank.questions = [
    },
    {
        statement: "KFC Started in a Gas Station.",
-       img: "assets/img/kfc/KM3.jpg",
+       img: "assets/img/kfc/Slide3.JPG",
        weight: 1,
        topic: 'Advanced',
 
@@ -389,9 +389,9 @@ questionbank.questions = [
    },
 
    {
-       statement: "Colonel Sanders once did a job of a fireman in the U.S. railway company.",
+       statement: "There are approximately 350 KFC outlets in India.",
        weight: 1,
-       img: "assets/img/kfc/KM4.jpg",
+       img: "assets/img/kfc/Slide27.JPG",
        topic: 'Advanced',
 
        opta: "True",
@@ -414,7 +414,7 @@ questionbank.questions = [
    },
    {
        statement: "Colonel Sanders was one of the first cooks to use a pressure fryer to fry his chicken.",
-       img: "assets/img/kfc/KM5.jpg",
+       img: "assets/img/kfc/Slide28.JPG",
        weight: 1,
        topic: 'Advanced',
 
@@ -437,8 +437,8 @@ questionbank.questions = [
        Slide_id:321
    },
    {
-       statement: "Amongst the many people who tried replicating the famous mix of KFC, only ___________ came the closest to it.",
-       img: "assets/img/kfc/KM6.jpg",
+       statement: "Amongst the many people who tried replicating the famous	 mix of KFC, only ___________ came the closest to it.",
+       img: "assets/img/kfc/Slide29.JPG",
        weight: 1,
        topic: 'Advanced',
 
@@ -462,7 +462,7 @@ questionbank.questions = [
    },
    {
        statement: "Last year, KFC launched a cartoon video game on the founder himself. What is the game named as?",
-       img: "assets/img/kfc/KM7.jpg",
+       img: "assets/img/kfc/Slide30.JPG",
        weight: 1,
        topic: 'Advanced',
 
@@ -486,7 +486,7 @@ questionbank.questions = [
    },
        {
        statement: "KFC has been using the same recipe since 1940 to cook the fried chicken.",
-       img: "assets/img/kfc/KM8.jpg",
+       img: "assets/img/kfc/Slide31.JPG",
        weight: 1,
        topic: 'Advanced',
 
@@ -510,23 +510,23 @@ questionbank.questions = [
    },
 {
            statement: "The Claudia Sanders Dinner House was named after the colonel's ….?",
-           img: "assets/img/kfc/KM10.jpg",
+           img: "assets/img/kfc/Slide2.JPG",
        weight: 1,
        topic: 'Advanced',
 
-       opta: "His 2nd wife",
+       opta: "2nd wife",
        optacorrect: true,
        optapoints: "10",
 
-       optb: "His daughter",
+       optb: "daughter",
        optbcorrect: false,
        optbpoints: "0",
 
-       optc: "His mother",
+       optc: "mother",
        optccorrect: false,
        optcpoints: "0",
 
-       optd: "His 1st wife",
+       optd: "1st wife",
        optdcorrect: false,
        optdpoints: "0",
 
@@ -534,8 +534,8 @@ questionbank.questions = [
    }
     ,
     {
-       statement: "KFC franchise was first opened in?",
-       img: "assets/img/kfc/KM9.jpg",
+       statement: "Outside the US, a KFC franchise was first opened in?",
+       img: "assets/img/kfc/Slide32.JPG",
        weight: 1,
        topic: 'Advanced',
 
