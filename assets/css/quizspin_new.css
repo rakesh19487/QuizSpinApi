@@ -121,7 +121,7 @@ html, body {
 #payoffs span { line-height: 50px; font-size: 12px; vertical-align: middle; }
 
 #leaderboard {
-    width:100%;
+    width:97%;
     box-sizing:border-box;
 }
 
@@ -264,7 +264,7 @@ html, body {
     top: 40%;
     position: absolute;
     left: 85.5%;
-    width: 13.5%;
+    width: 14%;
     height: 29%;
     z-index: 1;
 }

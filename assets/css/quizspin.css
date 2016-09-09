@@ -269,7 +269,7 @@ img {
 #payoffs span { line-height: 50px; font-size: 12px; vertical-align: middle; }
 
 #leaderboard {
-    width:100%;
+    width:97%;
 }
 
 #leaderboard td {
@@ -401,4 +401,15 @@ img {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+#know_more_image_wrapper{
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#know_more_img{
+    width: 100%;
+    height: auto;
 }

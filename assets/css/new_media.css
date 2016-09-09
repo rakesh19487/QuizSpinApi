@@ -13,13 +13,16 @@
       overflow-x: hidden;
     }
     #machine {
-      width: 100% !important;;
-      margin-left: -10px !important;;
+      width: 100% !important;
+      margin-left: -10px !important;
     }
     #freespins{
       left: 84% !important;
       width: 10% !important;
     }   
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }
 }
 
 /* Landscape */
@@ -54,6 +57,9 @@
       left: 84% !important;
       width: 10% !important;
     }   
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }
 }
 
 /* Landscape */
@@ -87,7 +93,10 @@
     #freespins{
       left: 84% !important;
       width: 10% !important;
-    }            
+    }        
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }    
 }
 
 /* Landscape */
@@ -121,7 +130,10 @@
     #freespins{
       left: 84% !important;
       width: 10% !important;
-    }              
+    }   
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }           
 }
 
 /* Landscape */
@@ -155,7 +167,10 @@
     #freespins{
       left: 84% !important;
       width: 10% !important;
-    }                  
+    }   
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }               
 }
 
 /* Landscape */
@@ -189,7 +204,10 @@
     #freespins{
       left: 84% !important;
       width: 10% !important;
-    }              
+    }    
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }          
 }
 
 /* Landscape */
@@ -223,7 +241,10 @@
     #freespins{
       left: 84% !important;
       width: 10% !important;
-    }                       
+    }   
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }                    
 }
 
 /* Landscape */
@@ -257,7 +278,10 @@
     #freespins{
       left: 84% !important;
       width: 10% !important;
-    }                    
+    }   
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }                 
 }
 
 /* Landscape */
@@ -390,6 +414,9 @@
       left: 84% !important;
       width: 10% !important;
     }   
+    #know_more_image_wrapper{
+      width: 100%!important;
+    }
 }
 
 
@@ -413,6 +440,9 @@
     #machine {
       width: 100% !important;;
       margin-left: -10px !important;;
+    }
+    #know_more_image_wrapper{
+      width: 100%!important;
     }
     #freespins{
       left: 84% !important;

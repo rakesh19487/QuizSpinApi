@@ -61,8 +61,8 @@ questionbank.questions = [
        optapoints: "0",
 
        optb: "KFC Inc.",
-       optbcorrect: true,
-       optbpoints: "10",
+       optbcorrect: false,
+       optbpoints: "0",
 
        optc: "USKO",
        optccorrect: false,
@@ -210,7 +210,7 @@ questionbank.questions = [
 
        optc: "Salt and Garlic",
        optccorrect: true,
-       optcpoints: "10",
+       optcpoints: "0",
 
        optd: "Salt and Chilli",
        optdcorrect: false,
