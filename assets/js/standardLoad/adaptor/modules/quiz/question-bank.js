@@ -14,7 +14,7 @@ questionbank.questions = [
 
         optb: "At a burger joint",
         optbcorrect: false,
-        optbpoints: "10",
+        optbpoints: "0",
 
         optc: "On a street stall",
         optccorrect: false,

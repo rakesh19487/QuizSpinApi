@@ -224,7 +224,6 @@ function processCombo(machine1, machine2, machine3) {
     if(free===false)
     {
         if(machine1.active == 5 || machine2.active == 5 || machine3.active == 5) {
-                console.log('ddd');
                 free=true;
                 playQuiz();
         }
