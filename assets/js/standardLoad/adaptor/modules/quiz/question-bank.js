@@ -209,7 +209,7 @@ questionbank.questions = [
        optbpoints: "0",
 
        optc: "Salt and Garlic",
-       optccorrect: true,
+       optccorrect: false,
        optcpoints: "0",
 
        optd: "Salt and Chilli",

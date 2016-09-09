@@ -235,6 +235,7 @@ img {
     height: 60%;
     text-shadow: 2px 1px #111;
     margin-top:1%;
+    display: none;
 }
 
 #payoffs div {

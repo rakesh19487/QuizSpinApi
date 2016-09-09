@@ -41,7 +41,7 @@ function initGame() {
     initQuiz();
     observers();
     handleIcons();
-    initPayOffTable();
+    // initPayOffTable();
 
     $("#currencyholder span").eq(1).text(player.coins.is());
     $("#statement-area, #options, #knowmore").wrapAll("<div id='quizinnerwrapper'></div>");
@@ -385,23 +385,23 @@ function handleIcons() {
     $("#payoffs h3").empty();
     $("#payoffs div").empty();
 
+    // $("#botPanel img").eq(0).unbind('click').on('click', function() {
+    //     initPayOffTable();
+    // });
     $("#botPanel img").eq(0).unbind('click').on('click', function() {
-        initPayOffTable();
-    });
-    $("#botPanel img").eq(1).unbind('click').on('click', function() {
         $("#payoffs h3").text("Instructions");
         $("#payoffs div").text("The main aim of the game is to spin the slot machine and get points." +
                         " Earn more points if you answer questions right. " +
                         "Free spins are awarded for every correct answer."
         )
     });
-    $("#botPanel img").eq(2).unbind('click').on('click', function() {
+    $("#botPanel img").eq(1).unbind('click').on('click', function() {
         $("#payoffs h3").text("Story");
         $("#payoffs div").text("Welcome to Quiz Spin. " +
         "Spin the slots to try your luck. But as they say, you can make your own luck. " +
         "Can you? Answer the questions to win big and leave lady luck gasping... ");
     });
-    $("#botPanel img").eq(3).unbind('click').on('click', function() {
+    $("#botPanel img").eq(2).unbind('click').on('click', function() {
         $("#payoffs h3").text("Leaderboard");
         $("#payoffs div").html("<table id='leaderboard' cellspacing='0'></table>");
         initLeaderboard();
@@ -452,6 +452,7 @@ function display_payoff() {
         $('#botPanel').fadeIn();
         info.addClass('info-active');
         $('#handle').css('z-index',0);
+        $("#botPanel img").eq(0).trigger('click');
         $('#info-btn span').html('Exit');
         $('#handle, #displaybox, #slots, #freespins, #currencyholder, #slotmachineimg').css('opacity', 0.2)
     }
