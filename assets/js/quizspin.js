@@ -41,7 +41,7 @@ function initGame() {
     initQuiz();
     observers();
     handleIcons();
-    initPayOffTable();
+    // initPayOffTable();
 
     $("#currencyholder span").eq(1).text(player.coins.is());
     $("#statement-area, #options, #knowmore").wrapAll("<div id='quizinnerwrapper'></div>");
@@ -152,24 +152,24 @@ function pullHandle() {
 
     var machine1 = $("#slot1").slotMachine({
         active  : 1,
-        delay   : 450
+        delay   : 200
     });
 
     var machine2 = $("#slot2").slotMachine({
         active  : 1,
-        delay   : 650
+        delay   : 300
     });
 
     var machine3 = $("#slot3").slotMachine({
         active  : 1,
-        delay   : 850
+        delay   : 400
     });
 
     machine1.shuffle(3);
     machine2.shuffle(4);
     machine3.shuffle(5, function() {
         processCombo(machine1, machine2, machine3);
-        $("#handle img").removeClass("no-click");
+        $("#handle img").css('pointer-events','auto');
     });
 
     m.animate({
@@ -178,7 +178,7 @@ function pullHandle() {
         {
             start:
                 function() {
-                    m.addClass("no-click");
+                    $("#handle img").css('pointer-events','none');
                 },
 
             step:
@@ -191,7 +191,7 @@ function pullHandle() {
                     m.css("margin-left", "-" + ml + "px");
                 },
 
-            duration: 800,
+            duration: 350,
 
             complete:
                 function() {
@@ -210,7 +210,7 @@ function pullHandle() {
                                     m.css("margin-left", "-" + ml + "px");
                                 },
 
-                            duration: 1800
+                            duration: 600
                         }
                     );
                 }
@@ -221,11 +221,17 @@ function pullHandle() {
 function processCombo(machine1, machine2, machine3) {
     var combo = machine1.active + "" + machine2.active + "" + machine3.active;
     rewards(combo);
+    console.log(machine1.active);
+    console.log(machine2.active);
+    console.log(machine3.active);
     if(free===false)
     {
         if(machine1.active == 5 || machine2.active == 5 || machine3.active == 5) {
                 free=true;
-                playQuiz();
+                setTimeout(function(){
+                    playQuiz();    
+                },1000)
+                
         }
     }
 }
@@ -287,16 +293,17 @@ function freeSpin(n) {
 
     setTimeout(function() { $("#messages").fadeOut(); }, 500);
     if(n>=1) {
+        $("#handle img").css('pointer-events','none');
         setTimeout(function() {
-            // $("#handle img").css('pointer-events','auto');
-            $("#handle img").trigger('click');
-            setTimeout(pullHandle(), 3000)
+            $("#handle img").css('pointer-events','auto');
+            // $("#handle img").trigger('click');
+            setTimeout(pullHandle(), 1000)
             $(".slot-item-6 img").attr("src", "assets/img/slotitems/7.png");
             n--;
             freeSpin(n);
-            // $("#handle img").css('pointer-events','none');
 
-        }, 6000);
+
+        }, 3000);
     }
     else {
         setTimeout(function() {
@@ -378,23 +385,23 @@ function handleIcons() {
     $("#payoffs h3").empty();
     $("#payoffs div").empty();
 
+    // $("#botPanel img").eq(0).unbind('click').on('click', function() {
+    //     initPayOffTable();
+    // });
     $("#botPanel img").eq(0).unbind('click').on('click', function() {
-        initPayOffTable();
-    });
-    $("#botPanel img").eq(1).unbind('click').on('click', function() {
         $("#payoffs h3").text("Instructions");
         $("#payoffs div").text("The main aim of the game is to spin the slot machine and get points." +
                         " Earn more points if you answer questions right. " +
                         "Free spins are awarded for every correct answer."
         )
     });
-    $("#botPanel img").eq(2).unbind('click').on('click', function() {
+    $("#botPanel img").eq(1).unbind('click').on('click', function() {
         $("#payoffs h3").text("Story");
         $("#payoffs div").text("Welcome to Quiz Spin. " +
         "Spin the slots to try your luck. But as they say, you can make your own luck. " +
         "Can you? Answer the questions to win big and leave lady luck gasping... ");
     });
-    $("#botPanel img").eq(3).unbind('click').on('click', function() {
+    $("#botPanel img").eq(2).unbind('click').on('click', function() {
         $("#payoffs h3").text("Leaderboard");
         $("#payoffs div").html("<table id='leaderboard' cellspacing='0'></table>");
         initLeaderboard();
@@ -445,6 +452,7 @@ function display_payoff() {
         $('#botPanel').fadeIn();
         info.addClass('info-active');
         $('#handle').css('z-index',0);
+        $("#botPanel img").eq(0).trigger('click');
         $('#info-btn span').html('Exit');
         $('#handle, #displaybox, #slots, #freespins, #currencyholder, #slotmachineimg').css('opacity', 0.2)
     }
@@ -465,7 +473,7 @@ function know_more_image(img,freespin){
         $("#messages").fadeOut(500, function() {
             $("#messages").css("display", "table");
             $("#messages").removeClass("environment");
-            $("#messageBox").html("<img src='" + img + "' id='know_more_img'><div class='exit_message' style='position: absolute;top: 0;right: 0;font-size: 0.6em;background: rgba(140, 72, 72, 0.8);padding: 5px;cursor:pointer;'>Exit</div>")
+            $("#messageBox").html("<div id='know_more_image_wrapper' style='width: 50%;margin: auto;position: relative;'><img src='" + img + "' id='know_more_img' style='width: 100%;height: auto;'></div><div class='exit_message' style='position: absolute;top: 0;right: 0;font-size: 0.6em;background: rgba(140, 72, 72, 0.8);padding: 5px;cursor:pointer;'>Exit</div>")
             $("#messages").fadeIn(500);
             mobiledetect()
             close_know_more(freespin);    
@@ -480,13 +488,13 @@ function close_know_more(freespin){
 }
 
 function mobiledetect(){
-    if (/Mobi/.test(navigator.userAgent)) {
-        $('#know_more_img').css('width','100%');
-        $('#know_more_img').css('height','auto');
-    }
-    else{
-        $('#know_more_img').css('width','50%');
-        $('#know_more_img').css('height','50%');   
-    }
+    // if (/Mobi/.test(navigator.userAgent)) {
+    //     $('#know_more_img').css('width','100%');
+    //     $('#know_more_img').css('height','auto');
+    // }
+    // else{
+    //     $('#know_more_img').css('width','50%');
+    //     $('#know_more_img').css('height','50%');   
+    // }
 }
 
