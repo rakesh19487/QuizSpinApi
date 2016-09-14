@@ -4,7 +4,7 @@ questionbank.questionsFromTopic = 4;
 questionbank.questions = [
     {
         statement: "Hoppipola was established in ________.",
-        img: "assets/img/hoppipola/Slide1.PNG",
+        img: "assets/img/hoppipola/Slide1.png",
         topic: 'basic',
         weight: 1,
 
@@ -28,7 +28,7 @@ questionbank.questions = [
     },
     {
         statement: "Hoppipola is one of the Specilaity Restaurants.",
-        img: "assets/img/hoppipola/Slide2.PNG",
+        img: "assets/img/hoppipola/Slide2.png",
         topic: 'basic',
         weight: 1,
 
@@ -52,7 +52,7 @@ questionbank.questions = [
     },
    {
        statement: "The tagline of Hoppipola is ________.",
-       img: "assets/img/hoppipola/Slide3.PNG",
+       img: "assets/img/hoppipola/Slide3.png",
        topic: 'basic',
        weight: 1,
 
@@ -76,7 +76,7 @@ questionbank.questions = [
    },
    {
        statement: "You never shake a Martini, you stir it.",
-       img: "assets/img/hoppipola/Slide4.PNG",
+       img: "assets/img/hoppipola/Slide4.png",
        topic: 'basic',
        weight: 1,
 
@@ -100,7 +100,7 @@ questionbank.questions = [
    },
    {
        statement: "The MARGARITA drink was named after the person who first tasted it",
-       img: "assets/img/hoppipola/Slide5.PNG",
+       img: "assets/img/hoppipola/Slide5.png",
        weight: 1,
        topic: 'intermediate',
 
@@ -124,7 +124,7 @@ questionbank.questions = [
    },
    {
        statement: "Which term was coined first- Mocktail or Cocktail?",
-       img: "assets/img/hoppipola/Slide6.PNG",
+       img: "assets/img/hoppipola/Slide6.png",
        weight: 1,
        topic: 'intermediate',
 
@@ -148,7 +148,7 @@ questionbank.questions = [
    },
    {
        statement: "White Wine can be produced both by Red and Green Grapes.",
-       img: "assets/img/hoppipola/Slide7.PNG",
+       img: "assets/img/hoppipola/Slide7.png",
        weight: 1,
        topic: 'intermediate',
 
@@ -173,7 +173,7 @@ questionbank.questions = [
    {
        statement: "Mojos are basically potato wedges.",
        weight: 1,
-       img: "assets/img/hoppipola/Slide8.PNG",
+       img: "assets/img/hoppipola/Slide8.png",
        topic: 'intermediate',
 
        opta: "True",
@@ -196,7 +196,7 @@ questionbank.questions = [
    },
    {
        statement: "Speciality Restaurants is the first and the only public listed company in the fine dining restaurant category.",
-       img: "assets/img/hoppipola/Slide9.PNG",
+       img: "assets/img/hoppipola/Slide9.png",
        weight: 1,
        topic: 'Advanced',
 
@@ -220,7 +220,7 @@ questionbank.questions = [
    },
    {
        statement: "The oldest wine cellar in the world is situated in?",
-       img: "assets/img/hoppipola/Slide10.PNG",
+       img: "assets/img/hoppipola/Slide10.png",
        weight: 1,
        topic: 'Advanced',
 
@@ -244,7 +244,7 @@ questionbank.questions = [
    },
    {
        statement: "The Country with the highest per Capita Wine consumption in the World is _________.",
-       img: "assets/img/hoppipola/Slide11.PNG",
+       img: "assets/img/hoppipola/Slide11.png",
        weight: 1,
        topic: 'Advanced',
 
@@ -269,7 +269,7 @@ questionbank.questions = [
     ,
    {
        statement: "Nachos were named after the person who invented them.",
-       img: "assets/img/hoppipola/Slide12.PNG",
+       img: "assets/img/hoppipola/Slide12.png",
        weight: 1,
        topic: 'Advanced',
 
