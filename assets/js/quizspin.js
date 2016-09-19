@@ -222,9 +222,6 @@ function pullHandle() {
 function processCombo(machine1, machine2, machine3) {
     var combo = machine1.active + "" + machine2.active + "" + machine3.active;
     rewards(combo);
-    console.log(machine1.active);
-    console.log(machine2.active);
-    console.log(machine3.active);
     if(free===false)
     {
         if(machine1.active == 5 || machine2.active == 5 || machine3.active == 5) {
