@@ -51,7 +51,7 @@ questionbank.questions = [
         Slide_id:321
     },
    {
-       statement: "Under or overvaluing invoices to disguise the movement of money is…?",
+       statement: "Under or overvaluing invoices to disguise the movement of money is...?",
        img: "assets/img/KnowMore/KnowMore3.png",
        topic: 'basic',
        weight: 1,
