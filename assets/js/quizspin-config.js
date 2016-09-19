@@ -16,7 +16,7 @@ config.player = {
 config.base = {
     type: "environment",
     states: [
-        {name: "default", representation: "<img src='assets/img/background.jpg'/>"}
+        {name: "default", representation: "<img src='assets/img/background.png'/>"}
     ]
 }
 
