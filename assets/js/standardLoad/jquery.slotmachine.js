@@ -221,7 +221,7 @@
 		
 		//Set min top offset
 		// this._minTop = - this._$fakeFirstTile.outerHeight();
-		this._minTop = -59;
+		this._minTop = -55;
 		
 		//Show active element
 		this.$container.css('margin-top', this.getTileOffset(this.active));

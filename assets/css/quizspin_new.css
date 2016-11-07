@@ -121,7 +121,7 @@ html, body {
 #payoffs span { line-height: 50px; font-size: 12px; vertical-align: middle; }
 
 #leaderboard {
-    width:97%;
+    width:100%;
     box-sizing:border-box;
 }
 
@@ -223,8 +223,8 @@ html, body {
 #slots {
     width: 51%;
     height: auto;
-    top: 40.35%;
-    left: 23%;
+    top: 41.35%;
+    left: 24%;
     -webkit-perspective: 500px;
     perspective: 500px;
     position: absolute;
@@ -246,7 +246,7 @@ html, body {
 
 #slot1 img, #slot2 img, #slot3 img {
     padding: 5px;
-    width:  58px;;
+    width:  55px;;
     height: auto;
     box-sizing: border-box;
 }

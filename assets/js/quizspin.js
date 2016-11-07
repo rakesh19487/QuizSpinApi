@@ -29,7 +29,6 @@ var quesbank = [];
 
 $(function() {
     initGame();
-    mobiledetect()
 });
 
 function initGame() {
@@ -41,12 +40,11 @@ function initGame() {
     initQuiz();
     observers();
     handleIcons();
-    // initPayOffTable();
+    initPayOffTable();
 
     $("#currencyholder span").eq(1).text(player.coins.is());
     $("#statement-area, #options, #knowmore").wrapAll("<div id='quizinnerwrapper'></div>");
-    // quesbank = Question.getTopicWiseRandomQuestions(questionbank.questionsFromTopic);
-    quesbank = Question.all;
+    quesbank = Question.getTopicWiseRandomQuestions(questionbank.questionsFromTopic);
     quesbank = shuffle(quesbank);
     quizScore = new Score(quesbank.length);
     // quesbank = shuffleQuestions(quesbank);
@@ -153,24 +151,24 @@ function pullHandle() {
 
     var machine1 = $("#slot1").slotMachine({
         active  : 1,
-        delay   : 200
+        delay   : 450
     });
 
     var machine2 = $("#slot2").slotMachine({
         active  : 1,
-        delay   : 300
+        delay   : 650
     });
 
     var machine3 = $("#slot3").slotMachine({
         active  : 1,
-        delay   : 400
+        delay   : 850
     });
 
     machine1.shuffle(3);
     machine2.shuffle(4);
     machine3.shuffle(5, function() {
         processCombo(machine1, machine2, machine3);
-        $("#handle img").css('pointer-events','auto');
+        $("#handle img").removeClass("no-click");
     });
 
     m.animate({
@@ -179,7 +177,7 @@ function pullHandle() {
         {
             start:
                 function() {
-                    $("#handle img").css('pointer-events','none');
+                    m.addClass("no-click");
                 },
 
             step:
@@ -192,7 +190,7 @@ function pullHandle() {
                     m.css("margin-left", "-" + ml + "px");
                 },
 
-            duration: 350,
+            duration: 800,
 
             complete:
                 function() {
@@ -211,7 +209,7 @@ function pullHandle() {
                                     m.css("margin-left", "-" + ml + "px");
                                 },
 
-                            duration: 600
+                            duration: 1800
                         }
                     );
                 }
@@ -222,20 +220,19 @@ function pullHandle() {
 function processCombo(machine1, machine2, machine3) {
     var combo = machine1.active + "" + machine2.active + "" + machine3.active;
     rewards(combo);
+    console.log("free" + free)
     if(free===false)
     {
         if(machine1.active == 5 || machine2.active == 5 || machine3.active == 5) {
                 free=true;
-                setTimeout(function(){
-                    playQuiz();    
-                },1000)
-                
+                playQuiz();
         }
     }
 }
 
 function playQuiz() {
     var question = quesbank.pop();
+    console.log(question)
 
 
     $("#quiz").css({display:"table"}); Question.showQuizPanel(quiz, question);
@@ -243,6 +240,7 @@ function playQuiz() {
 
     $(question).unbind('answered').on('answered', function(e, data) {
         if(data.correct) {
+            console.log("correct answer")
             quizScore.addCorrect(question);
             setScore(quizScore.getScore());
             //increment score in scorm and commit
@@ -254,30 +252,26 @@ function playQuiz() {
             }
             else {
                 free = true;
-                // freeSpin(2);
+                freeSpin(2);
                 $("#quiz").fadeOut(500);
                 $("#messages").css("display", "table");
                 $("#messages").removeClass("environment");
-                $("#messageBox").html("<p>That's correct! You won 2 free spins!</p>" +
-                    "<p><button type='button' class='know_more' style='background: rgba(51, 27, 27, 0.8);border: none;color: white;font-size: 0.6em;padding: 5px;cursor: pointer;'>Know More!</button></p>")
+                $("#messageBox").html("<p>That's correct! You won 2 free spins!</p>")
                 $("#messages").fadeIn(500);
-                know_more_image(data.img,2);
-
-                // setTimeout(function() { $("#messages").fadeOut(500);}, 4000);
+                setTimeout(function() { $("#messages").fadeOut(500);}, 4000);
             }
         }
         else {
+            console.log("ïncorrect answer")
             free = false;
             quesbank.unshift(question);
             quizScore.addIncorrect(question);
             $("#quiz").fadeOut(500);
             $("#messages").css("display", "table");
             $("#messages").removeClass("environment");
-            $("#messageBox").html("<p>Oops! That was the wrong answer. </p>" +
-                "<p><button type='button' class='know_more' style='background: rgba(51, 27, 27, 0.8);border: none;color: white;font-size: 0.6em;padding: 5px;cursor: pointer;'>Know More!</button></p>")
+            $("#messageBox").html("<p>Oops! That was the wrong answer. </p>")
             $("#messages").fadeIn(500);
-            know_more_image(data.img,0);
-            // setTimeout(function() { $("#messages").fadeOut(500);}, 3000);
+            setTimeout(function() { $("#messages").fadeOut(500);}, 3000);
         }
     });
 }
@@ -289,19 +283,16 @@ function freeSpin(n) {
     setTimeout(function() {$("#freespins span").eq(1).fadeIn()}, 400);
     $(".slot-item-6 img").effect("pulsate");
 
-    setTimeout(function() { $("#messages").fadeOut(); }, 500);
+    setTimeout(function() { $("#messages").fadeOut(); }, 2000);
     if(n>=1) {
-        $("#handle img").css('pointer-events','none');
         setTimeout(function() {
-            $("#handle img").css('pointer-events','auto');
             // $("#handle img").trigger('click');
-            setTimeout(pullHandle(), 1000)
+            setTimeout(pullHandle(), 3000)
             $(".slot-item-6 img").attr("src", "assets/img/slotitems/7.png");
             n--;
             freeSpin(n);
 
-
-        }, 3000);
+        }, 6000);
     }
     else {
         setTimeout(function() {
@@ -383,23 +374,23 @@ function handleIcons() {
     $("#payoffs h3").empty();
     $("#payoffs div").empty();
 
-    // $("#botPanel img").eq(0).unbind('click').on('click', function() {
-    //     initPayOffTable();
-    // });
     $("#botPanel img").eq(0).unbind('click').on('click', function() {
+        initPayOffTable();
+    });
+    $("#botPanel img").eq(1).unbind('click').on('click', function() {
         $("#payoffs h3").text("Instructions");
         $("#payoffs div").text("The main aim of the game is to spin the slot machine and get points." +
                         " Earn more points if you answer questions right. " +
                         "Free spins are awarded for every correct answer."
         )
     });
-    $("#botPanel img").eq(1).unbind('click').on('click', function() {
+    $("#botPanel img").eq(2).unbind('click').on('click', function() {
         $("#payoffs h3").text("Story");
         $("#payoffs div").text("Welcome to Quiz Spin. " +
         "Spin the slots to try your luck. But as they say, you can make your own luck. " +
         "Can you? Answer the questions to win big and leave lady luck gasping... ");
     });
-    $("#botPanel img").eq(2).unbind('click').on('click', function() {
+    $("#botPanel img").eq(3).unbind('click').on('click', function() {
         $("#payoffs h3").text("Leaderboard");
         $("#payoffs div").html("<table id='leaderboard' cellspacing='0'></table>");
         initLeaderboard();
@@ -450,7 +441,6 @@ function display_payoff() {
         $('#botPanel').fadeIn();
         info.addClass('info-active');
         $('#handle').css('z-index',0);
-        $("#botPanel img").eq(0).trigger('click');
         $('#info-btn span').html('Exit');
         $('#handle, #displaybox, #slots, #freespins, #currencyholder, #slotmachineimg').css('opacity', 0.2)
     }
@@ -464,35 +454,5 @@ function initLeaderboard() {
         '<tr><td>4.</td><td>Jene Doe</td><td>200</td></tr>' +
         '<tr><td>5.</td><td>James Doe</td><td>198</td></tr>'
     )
-}
-
-function know_more_image(img,freespin){
-    $('.know_more').unbind('click').bind('click',function(){
-        $("#messages").fadeOut(500, function() {
-            $("#messages").css("display", "table");
-            $("#messages").removeClass("environment");
-            $("#messageBox").html("<div id='know_more_image_wrapper' style='width: 50%;margin: auto;position: relative;'><img src='" + img + "' id='know_more_img' style='width: 100%;height: auto;'></div><div class='exit_message' style='position: absolute;top: 0;right: 0;font-size: 0.6em;background: rgba(140, 72, 72, 0.8);padding: 5px;cursor:pointer;'>Exit</div>")
-            $("#messages").fadeIn(500);
-            mobiledetect()
-            close_know_more(freespin);    
-        })
-    });
-}
-
-function close_know_more(freespin){
-    $('.exit_message').unbind('click').bind('click',function(){
-        freeSpin(freespin);
-    });
-}
-
-function mobiledetect(){
-    // if (/Mobi/.test(navigator.userAgent)) {
-    //     $('#know_more_img').css('width','100%');
-    //     $('#know_more_img').css('height','auto');
-    // }
-    // else{
-    //     $('#know_more_img').css('width','50%');
-    //     $('#know_more_img').css('height','50%');   
-    // }
 }
 
