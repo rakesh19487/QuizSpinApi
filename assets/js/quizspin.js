@@ -177,7 +177,7 @@ function pullHandle() {
         {
             start:
                 function() {
-                    m.addClass("no-click");
+                    $('#handle img').addClass("no-click");
                 },
 
             step:
